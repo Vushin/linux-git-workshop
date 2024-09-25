@@ -1,0 +1,6 @@
+[book]
+authors = ["J. Simon Richard", "Fabio Hinojosa Jimenez", "Vishnu Kalavakuntala", "Mason Clay"]
+language = "en"
+multilingual = false
+src = "src"
+title = "The CPT's Linux / Git Workshop"
