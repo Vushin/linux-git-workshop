@@ -11,6 +11,10 @@ jobs:
     runs-on: ubuntu-20.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
+    permissions:
+      contents: write  # This allows pushing to the repo
+      pages: write     # This allows deploying to Pages
+      id-token: write  # This is required for Pages deployment
     steps:
       - uses: actions/checkout@v2
 
