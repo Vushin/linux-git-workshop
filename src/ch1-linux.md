@@ -24,7 +24,7 @@ There are many different operating systems for many different purposes, but some
 * [Arch](https://archlinux.org/)
     * One of the most popular rolling-release Linux distribution
     * Uses the pacman package manager
-    * For more advanced users
+    * For more advanced users, since it doesn't come with default desktop environment
 * [Manjaro](https://manjaro.org/)
     * Based on Arch
 * [Kali Linux](https://www.kali.org/)
@@ -47,7 +47,7 @@ A desktop environment is a graphical user interface (GUI) that provides users wi
 
 More info: <https://en.wikipedia.org/wiki/Desktop_environment>
 
-Most linux distributions meant for desktop use come with a pre-installed desktop environment. For example, Ubuntu comes with GNOME while Kubuntu, a spinoff of Ubuntu, comes with KDE. It is important to note basically any linux distribution can be used with any desktop environment. In fact, some distro websites (like <https://fedoraproject.org/spins/>) provide a download for each popular desktop environment.
+Most linux distributions meant for desktop use come with a pre-installed desktop environment. For example, Ubuntu comes with GNOME while Kubuntu, a spinoff of Ubuntu, comes with KDE. It is important to note basically any linux distribution can be used with any desktop environment. In fact, some distro websites (like <https://fedoraproject.org/spins/>) provide a download for each popular desktop environment. Arch is somewhat unique in that it doesn't come with a desktop environment at all. Instead, users will need to install one after installing the distro itself.
 
 ## Why should I care about Linux?
 
