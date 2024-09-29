@@ -18,6 +18,8 @@ To switch branches
 
 `git checkout "name_of_the_branch"`
 
+![Drawing-0](./images/IMG_36D4CB635079-1.jpeg)
+
 ### Staging
 
 Once we made some changes we will want to commit them, before we can do that we want to stage the files. This is like another layer to saving your files. This is so if you have two files you changed but only one is ready to commit, you can select the file to stage.
@@ -43,3 +45,7 @@ This command creates a commit:
 `git commit -m "description of the commit"`
 
 ![Drawing-1](./images/IMG_23DAA7999A27-1.jpeg)
+
+A good way of visualizing how this works
+
+![Drawing-2](./images/IMG_96E3138F72ED-1.jpeg)
