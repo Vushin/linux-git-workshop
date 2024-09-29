@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="ch1-linux.html"><strong aria-hidden="true">1.</strong> What is Linux?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch1.1-linux-installation.html"><strong aria-hidden="true">1.1.</strong> How to Install Linux</a></li><li class="chapter-item expanded "><a href="ch1.2-linux-terminal.html"><strong aria-hidden="true">1.2.</strong> Using the Linux Terminal</a></li></ol></li><li class="chapter-item expanded "><a href="ch2-git.html"><strong aria-hidden="true">2.</strong> What is Git?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch2.1-git-installation.html"><strong aria-hidden="true">2.1.</strong> How to Install git</a></li><li class="chapter-item expanded "><a href="ch2.2-using-git.html"><strong aria-hidden="true">2.2.</strong> Using git</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded affix "><a href="cheat-sheet.html">Cheat Sheet</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="ch1-linux.html"><strong aria-hidden="true">1.</strong> What is Linux?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch1.1-linux-installation.html"><strong aria-hidden="true">1.1.</strong> How to Install Linux</a></li><li class="chapter-item expanded "><a href="ch1.2-linux-terminal.html"><strong aria-hidden="true">1.2.</strong> Using the Linux Terminal</a></li></ol></li><li class="chapter-item expanded "><a href="ch2-git.html"><strong aria-hidden="true">2.</strong> What is Git? Why Git?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch2.1-git-installation.html"><strong aria-hidden="true">2.1.</strong> How to Install git</a></li><li class="chapter-item expanded "><a href="ch2.2-using-git.html"><strong aria-hidden="true">2.2.</strong> Using git</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded affix "><a href="cheat-sheet.html">Cheat Sheet</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -188,7 +188,7 @@
 </ul>
 <p>And for git:</p>
 <ul>
-<li><a href="./ch2-git.html">What is git?</a></li>
+<li><a href="./ch2-git.html">What is git? Why Git?</a></li>
 <li>Why is it important? What are the use cases?</li>
 <li>How do you install git (on Windows, MasOS, and Linux)?</li>
 <li>How do you use git from the terminal?</li>
@@ -262,10 +262,60 @@
 </div>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="how-to-install-linux"><a class="header" href="#how-to-install-linux">How to install Linux</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="using-the-linux-terminal"><a class="header" href="#using-the-linux-terminal">Using the Linux Terminal</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="what-is-git"><a class="header" href="#what-is-git">What is Git?</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="what-is-git-why-git"><a class="header" href="#what-is-git-why-git">What is Git? Why Git?</a></h1>
+<h3 id="version-control"><a class="header" href="#version-control">Version control</a></h3>
 <p>Git is a version control system (VCS) that allows developers to track changes to their code over time.</p>
+<p>It basically takes a picture of what your files look like at the moment and stores a reference to a snapshot.</p>
+<h3 id="code-colaboration"><a class="header" href="#code-colaboration">Code colaboration</a></h3>
+<p>Lets say that you need to work on a coding project with your lab partner. How can both of you work on the same codebase?</p>
+<p>Git makes this possible</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="how-to-install-git"><a class="header" href="#how-to-install-git">How to Install git</a></h1>
+<h2 id="linux"><a class="header" href="#linux">Linux</a></h2>
+<p>Install it using your favourite package manager.</p>
+<p><code>$ sudo apt-get install git-all</code></p>
+<h2 id="macos"><a class="header" href="#macos">MacOS</a></h2>
+<p>MacOS will already have git installed by default.</p>
+<h2 id="windows"><a class="header" href="#windows">Windows</a></h2>
+<ol>
+<li>
+<p>Go to the latest <a href="https://gitforwindows.org/">Git Windows installer</a> and download the latest version.</p>
+</li>
+<li>
+<p>Follow the instructions as provided by the installer wizard.</p>
+</li>
+<li>
+<p>Open the windows command prompt.</p>
+</li>
+<li>
+<p>Type <code>git version</code> to verify Git was installed.</p>
+</li>
+</ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="using-git"><a class="header" href="#using-git">Using git</a></h1>
+<h2 id="how-does-it-work"><a class="header" href="#how-does-it-work">How does it work?</a></h2>
+<p>You will first create what is called a repository, this is the place where your code will be.</p>
+<p>In our case main will be our master repository. This is the main code that will be used.</p>
+<h3 id="branches"><a class="header" href="#branches">Branches</a></h3>
+<p>From this main code you can create branches, this allows you to make changes without the chance of ruining the main code. Think of it as a copy of your code that you can now change with zero risks.</p>
+<p>Use this command to create a new branch:</p>
+<p><code>git checkout -b "name_of_the_branch"</code></p>
+<p>To switch branches</p>
+<p><code>git checkout "name_of_the_branch"</code></p>
+<p><img src="./images/IMG_36D4CB635079-1.jpeg" alt="Drawing-0" /></p>
+<h3 id="staging"><a class="header" href="#staging">Staging</a></h3>
+<p>Once we made some changes we will want to commit them, before we can do that we want to stage the files. This is like another layer to saving your files. This is so if you have two files you changed but only one is ready to commit, you can select the file to stage.</p>
+<p>To stage your file run this command:</p>
+<p><code>git add file_name/folder_name</code></p>
+<p>TIP:</p>
+<p>use this command to see the changes made.</p>
+<p><code>git status</code></p>
+<h3 id="committing"><a class="header" href="#committing">Committing</a></h3>
+<p>Creating a commit creates a snapshot of all the staged files</p>
+<p>TIP: For commit messages do you not use past tense, such as "I made headings blue". Use language like "Make headings blue", as if you are giving orders to the codebase.</p>
+<p>This command creates a commit:</p>
+<p><code>git commit -m "description of the commit"</code></p>
+<p><img src="./images/IMG_23DAA7999A27-1.jpeg" alt="Drawing-1" /></p>
+<p>A good way of visualizing how this works</p>
+<p><img src="./images/IMG_96E3138F72ED-1.jpeg" alt="Drawing-2" /></p>
 <div style="break-before: page; page-break-before: always;"></div>
                     </main>
 
